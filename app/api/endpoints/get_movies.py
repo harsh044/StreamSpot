@@ -1,7 +1,6 @@
 from fastapi import APIRouter
 from utils.response import response
 from utils.dbconnect import mydb
-from bson.json_util import dumps
 
 router = APIRouter()
 
