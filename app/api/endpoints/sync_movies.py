@@ -103,7 +103,7 @@ def sync_movies_api():
                     file_link = f"https://drive.google.com/file/d/{file_id}/view"
                     print(f"{file_name}: {file_link}")
 
-                    mydata = {"movie_name": file_name, "movie_link": file_link,"movie_poster_link":None}
+                    mydata = {"movie_name": file_name, "movie_link": file_link,"movie_poster_link":None,"movie_category":None}
                     files_links.append(mydata)
 
                 if len(files_links)>0:

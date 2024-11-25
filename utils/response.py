@@ -1,6 +1,7 @@
 from fastapi.responses import JSONResponse
 from utils.messages import messages
 from fastapi import status
+from enum import Enum
 
 
 def response(status_code, data=[]):
@@ -14,3 +15,10 @@ def response(status_code, data=[]):
         },
         content[1] or status.HTTP_200_OK,
     )
+
+class MovieCategoryChoices(str, Enum):
+    ACTION = "Action"
+    COMEDY = "Comedy"
+    DRAMA = "Drama"
+    HORROR = "Horror"
+    SCIFI = "Sci-Fi"
