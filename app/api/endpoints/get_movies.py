@@ -11,7 +11,7 @@ def get_movies():
     try:
         json_data = [{**i, "_id": str(i["_id"])} for i in mycol.find()]
         if len(json_data)>=1:
-            return response(1002,json_data)
+            return response(1002,json_data[::-1])
         else:
             return response(1008)
         
