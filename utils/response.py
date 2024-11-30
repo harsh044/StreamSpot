@@ -21,4 +21,6 @@ class MovieCategoryChoices(str, Enum):
     COMEDY = "Comedy"
     DRAMA = "Drama"
     HORROR = "Horror"
+    ROMANCE = "Romance"
     SCIFI = "Sci-Fi"
+    THRILLER = "Thriller"

@@ -14,4 +14,6 @@ messages = {
     1010: ["Data Sync Successfully.", status.HTTP_200_OK,True],
     1011: ["Data Sync Failed.", status.HTTP_400_BAD_REQUEST,False],
     1012: ["Data Already Exist.", status.HTTP_200_OK,True],
+    1013: ["Movie deleted successfully.", status.HTTP_200_OK,True],
+    1014: ["Failed to add movie.", status.HTTP_400_BAD_REQUEST,True],
 }

@@ -1,7 +1,6 @@
-from fastapi import APIRouter,Query
+from fastapi import APIRouter
 from utils.response import response
 from utils.dbconnect import mydb
-from utils.response import MovieCategoryChoices
 
 router = APIRouter()
 mycol = mydb["streamspot"]    
