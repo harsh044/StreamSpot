@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.api.endpoints import home,sync_movies, upload_poster,get_movies,authentication,single_movie,movie_category,search_movie,delete_movie,add_movies,youtube_movies_download
+from app.api.endpoints import home,sync_movies, upload_poster,get_movies,authentication,single_movie,movie_category,search_movie,delete_movie,add_movies,youtube_movies_download,streamspot_sendmail
 
 api_router = APIRouter()
 
@@ -14,3 +14,4 @@ api_router.include_router(search_movie.router, prefix="/search_movie_api", tags=
 api_router.include_router(delete_movie.router, prefix="/delete_movie_api", tags=["delete_movie_api"])
 api_router.include_router(add_movies.router, prefix="/add_movies_api", tags=["add_movies_api"])
 api_router.include_router(youtube_movies_download.router, prefix="/youtube_movies_download_api", tags=["youtube_movies_download_api"])
+api_router.include_router(streamspot_sendmail.router, prefix="/streamspot_sendmail_api", tags=["streamspot_sendmail_api"])

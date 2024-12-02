@@ -16,4 +16,8 @@ messages = {
     1012: ["Data Already Exist.", status.HTTP_200_OK,True],
     1013: ["Movie deleted successfully.", status.HTTP_200_OK,True],
     1014: ["Failed to add movie.", status.HTTP_400_BAD_REQUEST,True],
+    1015: ["1080p stream not available", status.HTTP_400_BAD_REQUEST,True],
+    1016: ["Error downloading video", status.HTTP_400_BAD_REQUEST,True],
+    1017: ["Email Sent successfully.", status.HTTP_200_OK,True],
+    1018: ["Email Sent Failed.", status.HTTP_400_BAD_REQUEST,False],
 }
