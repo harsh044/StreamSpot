@@ -20,4 +20,5 @@ messages = {
     1016: ["Error downloading video", status.HTTP_400_BAD_REQUEST,True],
     1017: ["Email Sent successfully.", status.HTTP_200_OK,True],
     1018: ["Email Sent Failed.", status.HTTP_400_BAD_REQUEST,False],
+    1019: ["Order Created Successfully.", status.HTTP_200_OK,True],
 }
